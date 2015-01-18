@@ -1,3 +1,5 @@
+module Problem003 where
+
 elementAt :: [a] -> Int -> a
 elementAt xs i = xs !! (i - 1)
 

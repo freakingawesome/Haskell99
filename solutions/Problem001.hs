@@ -1,3 +1,5 @@
+module Problem001 where
+
 myLast :: [a] -> a
 myLast = head . reverse
 

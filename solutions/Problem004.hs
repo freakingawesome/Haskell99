@@ -1,3 +1,5 @@
+module Problem004 where
+
 myLength :: [a] -> Int
 myLength [] = 0
 myLength [_] = 1

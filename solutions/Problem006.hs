@@ -1,3 +1,5 @@
+module Problem006 where
+
 isPalindrome :: Eq a => [a] -> Bool
 isPalindrome [] = True
 isPalindrome list = left == right

@@ -1,3 +1,5 @@
+module Problem008 where
+
 compress :: Eq a => [a] -> [a]
 compress [] = []
 compress [x] = [x]
