@@ -1,10 +1,7 @@
 module Problem024 where
 
 import System.Random
+import Problem023 (rnd_select)
 
--- TODO: oops, the problem called for distinct random numbers
 diff_select :: Int -> Int -> IO ([Int])
-diff_select 0 h = return []
-diff_select n h = do r <- randomRIO (1,h)
-                     selected <- diff_select (n-1) h
-                     return (r : selected)
+diff_select n h = rnd_select [1..h] n
