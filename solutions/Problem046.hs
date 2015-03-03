@@ -1,6 +1,9 @@
-module Problem04 where
+module Problem046 where
 
 and', or', nand', nor', xor', impl', eq' :: Bool -> Bool -> Bool
+
+infix 4 `or'`
+infix 6 `and'`
 
 table :: (Bool -> Bool -> Bool) -> IO ()
 
